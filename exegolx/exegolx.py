@@ -79,6 +79,7 @@ def check_and_notify(tags: List[Dict[str, Any]]) -> None:
                     f"exegol update {image_name} !\n\nhttps://github.com/ThePorgs/Exegol"
                 )
                 client.create_tweet(text=message)
+                print("A new tweet has been sent")
                 update_last_pushed(tag['id'], tag['last_updated'])
         else:
             insert_image(tag['id'], tag['name'], tag['full_size'], tag['last_updated'])
