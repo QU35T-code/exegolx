@@ -76,7 +76,7 @@ def check_and_notify(tags: List[Dict[str, Any]]) -> None:
                 message = (
                     f"🚀 Une nouvelle version de l'image {image_name} ({size}Go) est maintenant disponible sur #Exegol. "
                     "Si vous l'utilisez, n'oubliez pas de la mettre à jour à l'aide de la commande : "
-                    f"exegol update {image_name} !\n\n@QU35T_TV @Dramelac_ @_nwodtuhs https://github.com/ThePorgs/Exegol"
+                    f"exegol update {image_name} !\n\nhttps://github.com/ThePorgs/Exegol"
                 )
                 client.create_tweet(text=message)
                 update_last_pushed(tag['id'], tag['last_updated'])
