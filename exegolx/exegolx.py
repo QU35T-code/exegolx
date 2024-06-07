@@ -13,7 +13,7 @@ import sys
 
 from typing import List, Dict, Any
 
-DB_FILE = '/root/exegolx.db'
+DB_FILE = '/home/exegolx/exegolx.db'
 URL = 'https://hub.docker.com/v2/repositories/nwodtuhs/exegol/tags?page=1&ordering=last_updated'
 
 consumer_key = os.getenv('CONSUMER_KEY')
