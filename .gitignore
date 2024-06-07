@@ -1,0 +1,5 @@
+venv/
+docker_images.db
+exegolx/.env
+build/
+exegolx.egg-info/
