@@ -72,7 +72,7 @@ def check_and_notify(tags: List[Dict[str, Any]]) -> None:
             if last_updated != tag['last_updated']:
                 print(f"New push detected for image {tag['name']}, last pushed: {tag['last_updated']}")
                 image_name = tag['name']
-                size = round(tag['full_size'] / (1024 ** 3), 2)
+                size = round(tag['full_size'] / (1024 ** 3) * 2.56, 2)
                 message = (
                     f"🚀 Une nouvelle version de l'image {image_name} ({size}Go) est maintenant disponible sur #Exegol. "
                     "Si vous l'utilisez, n'oubliez pas de la mettre à jour à l'aide de la commande : "
