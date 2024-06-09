@@ -74,8 +74,8 @@ def check_and_notify(tags: List[Dict[str, Any]]) -> None:
                 image_name = tag['name']
                 size = round(tag['full_size'] / (1024 ** 3) * 2.56, 2)
                 message = (
-                    f"🚀 Une nouvelle version de l'image {image_name} ({size}Go) est maintenant disponible sur #Exegol. "
-                    "Si vous l'utilisez, n'oubliez pas de la mettre à jour à l'aide de la commande : "
+                    f"🚀 A new version of the {image_name} image (~{size}GB) is now available on #Exegol. "
+                    f"If you use it, don't forget to update it using the command : "
                     f"exegol update {image_name} !\n\nhttps://github.com/ThePorgs/Exegol"
                 )
                 client.create_tweet(text=message)
